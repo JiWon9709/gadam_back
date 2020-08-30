@@ -26,7 +26,11 @@ CREATE TABLE `exercise` (
   PRIMARY KEY (`idexercise`)
 );
 
-
+INSERT INTO `exercise` VALUES (1, '수영');
+INSERT INTO `exercise` VALUES (2, '탁구');
+INSERT INTO `exercise` VALUES (3, '배드민턴');
+INSERT INTO `exercise` VALUES (4, '러닝');
+INSERT INTO `exercise` VALUES (5, '사이클');
 
 CREATE TABLE `crew` (
   `idcrew` int(10) NOT NULL AUTO_INCREMENT,
