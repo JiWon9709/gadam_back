@@ -12,7 +12,7 @@ var connection = mysql.createConnection(
 
 connection.connect();
   
-connection.query('SELECT * FROM user', function (error, results, fields) {
+connection.query('SELECT * FROM crew', function (error, results, fields) {
     if (error) {
         console.log(error);
     }

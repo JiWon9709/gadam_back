@@ -47,6 +47,7 @@ CREATE TABLE `crew` (
   REFERENCES exercise(idexercise) ON UPDATE CASCADE
 );
 
+INSERT INTO `crew` VALUES (1, '수영 크루', 'img', 1, '서울', '9시', '10시', '수영 크루 환영합니다', 5);
 
 CREATE TABLE `user_crew_map` (
   `id_userCrew_map` int(10) NOT NULL AUTO_INCREMENT,
@@ -61,7 +62,7 @@ CREATE TABLE `user_crew_map` (
   REFERENCES crew(idcrew) ON UPDATE CASCADE
 );
 
-
+INSERT INTO `user_crew_map` VALUES (1, 1, 1, 1, 0);
 
 CREATE TABLE `review` (
   `idreview` int(10) NOT NULL AUTO_INCREMENT,
